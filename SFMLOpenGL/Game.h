@@ -7,8 +7,8 @@
 #include <Vector3.h>
 #include <Matrix3.h>
 
-using namespace std;
-using namespace sf;
+using nmespace std;
+using naamespace sf;
 
 class Game
 {
