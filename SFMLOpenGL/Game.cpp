@@ -420,6 +420,26 @@ void Game::update()
 	m_vertex[0].coordinate[1] += -0.0001f;
 	m_vertex[0].coordinate[2] += -0.0001f;*/
 
+	for (int index = 0;index < 36;index++)
+	{
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+		{
+			m_vertex[index].coordinate[0] += -0.001f;
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+		{
+			m_vertex[index].coordinate[0] += 0.001f;
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+		{
+			m_vertex[index].coordinate[1] += 0.001f;
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+		{
+			m_vertex[index].coordinate[1] += -0.001f;
+		}
+
+	}
 	cout << "Update up" << endl;
 }
 
